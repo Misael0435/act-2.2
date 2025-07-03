@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Círculo con colores</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+    #circulo {
+      width: 200px;
+      height: 200px;
+      border: 2px solid #003344;
+      border-radius: 50%;
+      margin: 40px auto;
+      background-color: white;
+    }
+    .color-btn {
+      background-color: #125d74;
+      color: white;
+      border: none;
+      padding: 20px;
+      margin: 10px;
+      width: 90px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .color-btn:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="circulo"></div>
+
+  <button class="color-btn" onclick="cambiarColor('red')">rojo</button>
+  <button class="color-btn" onclick="cambiarColor('blue')">azul</button>
+  <button class="color-btn" onclick="cambiarColor('green')">verde</button>
+  <button class="color-btn" onclick="cambiarColor('#8B4513')">cafe</button>
+
+  <script>
+    function cambiarColor(color) {
+      document.getElementById("circulo").style.backgroundColor = color;
+    }
+  </script>
+
+</body>
+</html>
